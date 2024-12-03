@@ -1,0 +1,121 @@
+/* Reset styles */
+
+html, body {
+    height: 100%; /* Full viewport height */
+    width: 100%;  /* Full viewport width */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* A clean font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Neutral background */
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    background-color: #006400; /* Dark green for header */
+    color: #ffffff; /* White text */
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    height: 100%; /* Occupy full height of its parent */
+    width: 100%; /* Occupy full width of its parent */
+    background-color: #ff0000; /* Christmas red */
+}
+
+.tab {
+    flex: 1; /* Each button gets an equal height (33%) */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    border: 1px solid #ffffff; /* White border */
+    background-color: #ff6347; /* Tomato red */
+    font-size: 1.2rem; /* Font size for button text */
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    cursor: pointer; /* Pointer cursor for buttons */
+    outline: none; /* Remove focus outline */
+}
+
+.tab:hover {
+    background-color: #00800048; /* Hover to a festive green */
+    color: #ffdf00; /* Gold text for hover effect */
+}
+
+/* Content Section */
+.content {
+    flex: 8;
+    display: flex;
+    flex-direction: column; /* Stacks rows vertically */
+    width: 100%;
+    height: 100%; /* Full screen height */
+    border: 2px solid #333;
+    background-color: #f4f4f4;
+}
+
+/* Row Definitions */
+.row-title {
+    flex: 3; /* 30% of height (3 parts out of 10) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0000; /* Bright Christmas red */
+    color: #ffffff; /* White text */
+    font-family: 'Great Vibes', cursive; /* Decorative cursive font */
+    font-size: 3rem;
+    border-bottom: 2px solid #333;
+}
+
+/* Main Content */
+.row-content {
+    flex: 7; /* 70% of height (7 parts out of 10) */
+    display: flex; /* Divides into columns */
+}
+
+/* Column A: Text */
+.text-column {
+    flex: 1; /* Equal width (50%) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #008000; /* Festive green */
+    color: #ffffff; /* White text */
+    border-right: 2px solid #333;
+    padding: 20px;
+}
+
+/* Column B: Image */
+.image-column {
+    flex: 1; /* Equal width (50%) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Neutral white background */
+    border-left: 2px solid #333;
+}
+
+.image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #ff0000; /* Red border for image */
+}
+
+/* Optional: Adding Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap');
